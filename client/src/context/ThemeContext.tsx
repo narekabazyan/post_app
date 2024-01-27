@@ -1,4 +1,11 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, {
+  createContext,
+  useContext,
+  useState,
+  ReactNode,
+  useCallback,
+  useEffect,
+} from 'react';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 import { darkModeTheme, lightModeTheme } from '@/styles/themes';
 
@@ -14,9 +21,15 @@ export const ThemeSwitcherProvider: React.FC<{
 }> = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
 
-  const toggleTheme = () => {
+  const toggleTheme = useCallback(() => {
     setIsDarkMode((currentTheme) => !currentTheme);
-  };
+  }, [setIsDarkMode]);
+
+  useEffect(() => {
+    document.body.style.background = isDarkMode
+      ? darkModeTheme.background
+      : lightModeTheme.background;
+  }, [isDarkMode]);
 
   return (
     <ThemeContext.Provider value={{ toggleTheme, isDarkMode }}>
