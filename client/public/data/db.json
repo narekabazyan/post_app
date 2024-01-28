@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "creationDate": "2024-01-28",
+      "title": "Next.js: Server-Side Rendering (SSR)",
+      "body": "Next.js enhances SEO and initial page load by offering Server-Side Rendering. This feature pre-renders each page on the server before it reaches the client. It's ideal for pages that need to display frequently updated data. SSR also helps in improving the performance of web applications on mobile devices.",
+      "image": "image_url_placeholder"
+    },
+    {
+      "id": 2,
+      "creationDate": "2024-01-28",
+      "title": "Next.js: Static Site Generation (SSG)",
+      "body": "Next.js offers Static Site Generation for faster, more secure websites. With SSG, pages are pre-rendered at build time, which allows for lightning-fast loading speeds. This is perfect for blogs, documentation, and any site where content doesn't change on each request. SSG in Next.js seamlessly integrates with headless CMSs.",
+      "image": "image_url_placeholder"
+    },
+    {
+      "id": 3,
+      "creationDate": "2024-01-28",
+      "title": "Next.js: API Routes",
+      "body": "Next.js simplifies back-end processes with API Routes. Developers can create API endpoints within a Next.js app without needing a separate server. This allows for easier data fetching and database integration. API Routes also streamline server-side operations and client-side data fetching.",
+      "image": "image_url_placeholder"
+    },
+    {
+      "id": 4,
+      "creationDate": "2024-01-28",
+      "title": "Next.js: Incremental Static Regeneration",
+      "body": "Incremental Static Regeneration in Next.js offers the best of both worlds between SSG and SSR. Pages are generated statically but can be updated after deployment. It's great for sites that require fresh content without needing to rebuild the entire site. ISR reduces build times and scales better for large sites.",
+      "image": "image_url_placeholder"
+    },
+    {
+      "id": 5,
+      "creationDate": "2024-01-28",
+      "title": "Next.js: Built-in CSS and Sass Support",
+      "body": "Next.js provides built-in support for CSS and Sass, allowing developers to import stylesheets directly. This feature supports global styles as well as CSS Modules for component-level styles. The built-in CSS support ensures optimized loading and minimizes style conflicts. It also simplifies the overall development process.",
+      "image": "image_url_placeholder"
+    }
+  ]
+}

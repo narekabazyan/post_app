@@ -1,4 +1,4 @@
-import { User } from '@/app/models';
+import User from '@/types/user';
 import AvatarImg from '@/styles/img.png';
 
 const mockUsers: User[] = [

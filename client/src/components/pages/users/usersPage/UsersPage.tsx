@@ -2,7 +2,7 @@ import React, { lazy, useMemo, useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import UsersPageHead from '@/components/pages/users/usersPageHead/UsersPageHead';
 import UserCard from '@/components/pages/users/userCard/UserCard';
-import { User } from '@/app/models';
+import User from '@/types/user';
 import { usersDB } from '@/utils/usersDB';
 import {
   StyledUsersPage,

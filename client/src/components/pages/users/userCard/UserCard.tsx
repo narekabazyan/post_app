@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui';
-import { User } from '@/app/models';
+import User from '@/types/user';
 import {
   StyledImage,
   StyledUserAge,

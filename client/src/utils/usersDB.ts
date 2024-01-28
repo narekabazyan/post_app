@@ -1,5 +1,5 @@
 import Dexie, { Table } from 'dexie';
-import { User } from '@/app/models';
+import User from '@/types/user';
 
 class UsersDatabase extends Dexie {
   users!: Table<User, number>;

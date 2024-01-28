@@ -1,6 +1,6 @@
 import { StaticImageData } from 'next/image';
 
-export interface User {
+export default interface User {
   id?: number;
   name: string;
   email: string;
