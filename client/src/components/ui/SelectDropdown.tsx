@@ -27,6 +27,7 @@ export interface SelectOption {
 interface SelectDropdownProps {
   label: string;
   name: string;
+  value: string;
   options: SelectOption[];
   onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
 }
@@ -36,11 +37,12 @@ const SelectDropdown: React.FC<SelectDropdownProps> = ({
   name,
   options,
   onChange,
+  value,
 }) => {
   return (
     <SelectHolder>
       <SelectLabel htmlFor={name}>{label}</SelectLabel>
-      <Select name={name} id={name} onChange={onChange}>
+      <Select name={name} id={name} value={value} onChange={onChange}>
         {options.map((option) => (
           <option key={option.label} value={option.value}>
             {option.label}

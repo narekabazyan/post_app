@@ -1,18 +1,13 @@
-import Dexie from 'dexie';
-
-interface User {
-  id?: number;
-  name: string;
-  email: string;
-}
+import Dexie, { Table } from 'dexie';
+import { User } from '@/app/models';
 
 class UsersDatabase extends Dexie {
-  users!: Dexie.Table<User, number>;
+  users!: Table<User, number>;
 
   constructor() {
     super('UsersDatabase');
     this.version(1).stores({
-      users: '++id, name, email',
+      users: '++id, name, age',
     });
   }
 }

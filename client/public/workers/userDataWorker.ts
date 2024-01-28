@@ -4,7 +4,7 @@ import { usersDB } from '@/utils/usersDB';
 self.addEventListener('message', async (event: MessageEvent) => {
   if (event.data.type === 'SAVE_USERS') {
     try {
-      const userId = await usersDB.users.add(event.data.user);
+      const userId = await usersDB.users.bulkAdd(event.data.users);
       postMessage({ type: 'USER_SAVED', userId });
     } catch (error) {
       postMessage({ type: 'ERROR', error: (error as Error).message });

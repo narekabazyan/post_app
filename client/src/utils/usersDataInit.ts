@@ -1,4 +1,5 @@
 import { usersDB } from '@/utils/usersDB';
+import mockUsers from '@/utils/mockUsers';
 
 const saveUsersByWorker = () => {
   const worker = new Worker(
@@ -17,7 +18,7 @@ const saveUsersByWorker = () => {
 
   worker.postMessage({
     type: 'SAVE_USERS',
-    user: { name: 'John Doe', email: 'john@example.com' },
+    users: mockUsers,
   });
 };
 
