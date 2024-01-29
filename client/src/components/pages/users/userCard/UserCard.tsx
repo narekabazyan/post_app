@@ -16,7 +16,10 @@ const UsersPage: FC<{ user: User }> = ({ user }) => {
     <StyledUserCard>
       <StyledImage
         priority={true}
-        src={user.avatar}
+        src={
+          'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220311094050/User-send-a-request-to.png'
+        }
+        // src={user.avatar}
         alt='Avatar'
         width={80}
         height={80}

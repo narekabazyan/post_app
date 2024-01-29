@@ -1,8 +1,6 @@
-import Navigation from '@/components/layout/Navigation';
-import ThemeSwitcher from '@/components/common/ThemeSwithcer';
 import styled from 'styled-components';
 
-const StyledHeader = styled.header`
+export const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,14 +14,3 @@ const StyledHeader = styled.header`
   position: sticky;
   top: 0;
 `;
-
-const Header = () => {
-  return (
-    <StyledHeader>
-      <Navigation />
-      <ThemeSwitcher />
-    </StyledHeader>
-  );
-};
-
-export default Header;

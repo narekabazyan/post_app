@@ -11,9 +11,6 @@ const PaginationComponent: React.FC<PaginationComponentProps> = ({
   pageCount,
   onPageChange,
 }) => {
-  useEffect(() => {
-    console.log('page', pageCount);
-  }, [pageCount]);
   return (
     <PaginationContainer>
       <ReactPaginate

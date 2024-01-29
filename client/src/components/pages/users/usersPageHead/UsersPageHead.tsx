@@ -21,11 +21,11 @@ const UsersPageHead: FC<UsersPageHeadProps> = ({
 }) => {
   const handleChangeQueryFilter = (
     value: string,
-    filter: keyof UsersQueryFilter
+    name: keyof UsersQueryFilter
   ) => {
     setUsersQueryFilter({
       ...usersQueryFilter,
-      [filter]: value,
+      [name]: value,
       pageNumber: initialPage,
     });
   };

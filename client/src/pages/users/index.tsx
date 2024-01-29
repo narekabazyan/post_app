@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { ReactElement } from 'react';
-import PageLayout from '@/components/layout/PageLayout';
+import PageLayout from '@/components/layout/pageLayout';
 import UsersPage from '@/components/pages/users/usersPage/UsersPage';
 
 export default function Users() {

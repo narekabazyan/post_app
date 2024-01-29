@@ -1,4 +1,4 @@
-import React, { lazy, useMemo, useState } from 'react';
+import React, { lazy, Suspense, useMemo, useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import UsersPageHead from '@/components/pages/users/usersPageHead/UsersPageHead';
 import UserCard from '@/components/pages/users/userCard/UserCard';
@@ -134,10 +134,12 @@ const UsersPage = () => {
         ))}
       </StyledUsersPageContent>
       {pageCount > 1 ? (
-        <UsersPagination
-          pageCount={pageCount}
-          setCurrentPage={handlePageNumberChange}
-        />
+        <Suspense fallback={<div>Loading...</div>}>
+          <UsersPagination
+            pageCount={pageCount}
+            setCurrentPage={handlePageNumberChange}
+          />
+        </Suspense>
       ) : null}
     </StyledUsersPage>
   );
