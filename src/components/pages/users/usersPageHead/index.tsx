@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import { UsersQueryFilter } from '@/types/user';
 import { Input, SelectDropdown } from '@/components/ui';
 import { UserSortOptions } from '@/constants/userSortOptions';
@@ -51,35 +51,33 @@ const UsersPageHead: FC<UsersPageHeadProps> = ({
     });
   };
 
-  const handleChangeNameSearch = (value: string) => {
-    setNameSearchInputValue(value);
-
+  useEffect(() => {
     debouncedSaveQueryFilter({
       ...usersQueryFilter,
       nameSearch: nameSearchValue,
       pageNumber: InitialPage,
     });
-  }
+  }, [nameSearchValue]);
 
   return (
     <StyledUsersPageHead>
       <StyledUsersPageHeadInput>
         <Input
           value={nameSearchValue}
-          onChange={(e) => handleChangeNameSearch(e.target.value)}
+          onChange={(e) => setNameSearchInputValue(e.target.value)}
           placeholder='Search by name'
         />
       </StyledUsersPageHeadInput>
       <StyledUsersSort>
         <SelectDropdown
-          label='Sort Name'
+          label='Sort by Name'
           name='sortName'
           value={usersQueryFilter.nameSort}
           options={UserSortOptions}
           onChange={(e) => handleChangeNameSort(e.target.value as SortEnum)}
         />
         <SelectDropdown
-          label='Sort Age'
+          label='Sort by Age'
           name='sortAge'
           value={usersQueryFilter.ageSort}
           options={UserSortOptions}
