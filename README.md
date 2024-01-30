@@ -20,7 +20,11 @@ npm run json-server
 ```bash
 # Build the project:
 npm run build
-# Start the application:
+```
+
+4: Run application on localhost:
+```bash
+# Build the project:
 npm run start
 ```
 
