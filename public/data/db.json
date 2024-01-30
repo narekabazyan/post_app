@@ -1,0 +1,251 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "creationDate": "2024-01-28",
+      "title": "Next.js: Built-in CSS and Sass Support",
+      "body": "Next.js provides built-in support for CSS and Sass, allowing developers to import stylesheets directly. This feature supports global styles as well as CSS Modules for component-level styles. The built-in CSS support ensures optimized loading and minimizes style conflicts. It also simplifies the overall development process.",
+      "image": "https://www.freecodecamp.org/news/content/images/2021/01/Article.jpg"
+    },
+    {
+      "id": 2,
+      "creationDate": "2024-01-28",
+      "title": "Next.js: API Routes",
+      "body": "Next.js simplifies back-end processes with API Routes. Developers can create API endpoints within a Next.js app without needing a separate server. This allows for easier data fetching and database integration. API Routes also streamline server-side operations and client-side data fetching.",
+      "image": "https://xerosource.com/wp-content/uploads/2023/05/NextJS-API-Routes-768x384.webp"
+    },
+    {
+      "id": 3,
+      "creationDate": "2024-01-28",
+      "title": "Next.js: Static Site Generation (SSG)",
+      "body": "Next.js offers Static Site Generation for faster, more secure websites. With SSG, pages are pre-rendered at build time, which allows for lightning-fast loading speeds. This is perfect for blogs, documentation, and any site where content doesn't change on each request. SSG in Next.js seamlessly integrates with headless CMSs.",
+      "image": "https://nextjs.org/api/docs-og?title=Rendering:%20Static%20Site%20Generation%20(SSG)"
+    },
+    {
+      "id": 4,
+      "creationDate": "2024-01-28",
+      "title": "Next.js: Incremental Static Regeneration",
+      "body": "Incremental Static Regeneration in Next.js offers the best of both worlds between SSG and SSR. Pages are generated statically but can be updated after deployment. It's great for sites that require fresh content without needing to rebuild the entire site. ISR reduces build times and scales better for large sites.",
+      "image": "https://www.atatus.com/blog/content/images/2021/10/Next.js-Incremental-Static-Regeneration-.jpeg"
+    },
+    {
+      "id": 5,
+      "creationDate": "2024-01-28",
+      "title": "Next.js: Server-Side Rendering (SSR)",
+      "body": "Next.js enhances SEO and initial page load by offering Server-Side Rendering. This feature pre-renders each page on the server before it reaches the client. It's ideal for pages that need to display frequently updated data. SSR also helps in improving the performance of web applications on mobile devices.",
+      "image": "https://res.cloudinary.com/netlify/video/upload/q_auto,w_1280,h_720,c_fill,f_auto,so_2/l_text:Roboto_80_center:Next.js%20Server-Side%20Rendering,co_white,w_1000,c_fit/explorers/intro.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Bernard Acosta",
+      "email": "bernardacosta@gmail.com",
+      "age": 23,
+      "avatar": "https://w7.pngwing.com/pngs/481/915/png-transparent-computer-icons-user-avatar-woman-avatar-computer-business-conversation-thumbnail.png"
+    },
+    {
+      "id": 2,
+      "name": "Justin Torres",
+      "email": "justintorres@gmail.com",
+      "age": 29,
+      "avatar": "https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png"
+    },
+    {
+      "id": 3,
+      "name": "Christopher Kennedy",
+      "email": "christopherkennedy@gmail.com",
+      "age": 37,
+      "avatar": "https://w7.pngwing.com/pngs/481/915/png-transparent-computer-icons-user-avatar-woman-avatar-computer-business-conversation-thumbnail.png"
+    },
+    {
+      "id": 4,
+      "name": "Anne Mcdonald",
+      "email": "annemcdonald@gmail.com",
+      "age": 41,
+      "avatar": "https://w7.pngwing.com/pngs/129/292/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png"
+    },
+    {
+      "id": 5,
+      "name": "Jennifer Murray",
+      "email": "jennifermurray@gmail.com",
+      "age": 45,
+      "avatar": "https://cdn.icon-icons.com/icons2/2643/PNG/512/female_woman_user_people_person_avatar_black_tone_icon_159361.png"
+    },
+    {
+      "id": 6,
+      "name": "Tammy Frazier",
+      "email": "tammyfrazier@gmail.com",
+      "age": 38,
+      "avatar": "https://w7.pngwing.com/pngs/129/292/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png"
+    },
+    {
+      "id": 7,
+      "name": "Rachel Lee",
+      "email": "rachellee@gmail.com",
+      "age": 64,
+      "avatar": "https://cdn.icon-icons.com/icons2/2643/PNG/512/female_woman_user_people_person_avatar_black_tone_icon_159361.png"
+    },
+    {
+      "id": 8,
+      "name": "Andrea Shields",
+      "email": "andreashields@gmail.com",
+      "age": 37,
+      "avatar": "https://w7.pngwing.com/pngs/481/915/png-transparent-computer-icons-user-avatar-woman-avatar-computer-business-conversation-thumbnail.png"
+    },
+    {
+      "id": 9,
+      "name": "Francisco Powell",
+      "email": "franciscopowell@gmail.com",
+      "age": 30,
+      "avatar": "https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png"
+    },
+    {
+      "id": 10,
+      "name": "Russell Kemp",
+      "email": "russellkemp@gmail.com",
+      "age": 54,
+      "avatar": "https://w7.pngwing.com/pngs/481/915/png-transparent-computer-icons-user-avatar-woman-avatar-computer-business-conversation-thumbnail.png"
+    },
+    {
+      "id": 11,
+      "name": "Noah Moreno",
+      "email": "noahmoreno@gmail.com",
+      "age": 20,
+      "avatar": "https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png"
+    },
+    {
+      "id": 12,
+      "name": "Elizabeth Cordova",
+      "email": "elizabethcordova@gmail.com",
+      "age": 27,
+      "avatar": "https://w7.pngwing.com/pngs/129/292/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png"
+    },
+    {
+      "id": 13,
+      "name": "Michael Murray",
+      "email": "michaelmurray@gmail.com",
+      "age": 21,
+      "avatar": "https://w7.pngwing.com/pngs/481/915/png-transparent-computer-icons-user-avatar-woman-avatar-computer-business-conversation-thumbnail.png"
+    },
+    {
+      "id": 14,
+      "name": "Shawn Miller",
+      "email": "shawnmiller@gmail.com",
+      "age": 41,
+      "avatar": "https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png"
+    },
+    {
+      "id": 15,
+      "name": "Tyler Hernandez",
+      "email": "tylerhernandez@gmail.com",
+      "age": 39,
+      "avatar": "https://w7.pngwing.com/pngs/481/915/png-transparent-computer-icons-user-avatar-woman-avatar-computer-business-conversation-thumbnail.png"
+    },
+    {
+      "id": 16,
+      "name": "Karen Decker",
+      "email": "karendecker@gmail.com",
+      "age": 31,
+      "avatar": "https://cdn.icon-icons.com/icons2/2643/PNG/512/female_woman_user_people_person_avatar_black_tone_icon_159361.png"
+    },
+    {
+      "id": 17,
+      "name": "Susan Holmes",
+      "email": "susanholmes@gmail.com",
+      "age": 45,
+      "avatar": "https://w7.pngwing.com/pngs/129/292/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png"
+    },
+    {
+      "id": 18,
+      "name": "Jodi Schmidt",
+      "email": "jodischmidt@gmail.com",
+      "age": 41,
+      "avatar": "https://cdn.icon-icons.com/icons2/2643/PNG/512/female_woman_user_people_person_avatar_black_tone_icon_159361.png"
+    },
+    {
+      "id": 19,
+      "name": "Nicholas Boyer",
+      "email": "nicholasboyer@gmail.com",
+      "age": 45,
+      "avatar": "https://w7.pngwing.com/pngs/481/915/png-transparent-computer-icons-user-avatar-woman-avatar-computer-business-conversation-thumbnail.png"
+    },
+    {
+      "id": 20,
+      "name": "Tyler Nolan",
+      "email": "tylernolan@gmail.com",
+      "age": 40,
+      "avatar": "https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png"
+    },
+    {
+      "id": 21,
+      "name": "Kathy Clark",
+      "email": "kathyclark@gmail.com",
+      "age": 21,
+      "avatar": "https://w7.pngwing.com/pngs/129/292/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png"
+    },
+    {
+      "id": 22,
+      "name": "Mario Fritz",
+      "email": "mariofritz@gmail.com",
+      "age": 32,
+      "avatar": "https://w7.pngwing.com/pngs/481/915/png-transparent-computer-icons-user-avatar-woman-avatar-computer-business-conversation-thumbnail.png"
+    },
+    {
+      "id": 23,
+      "name": "Timothy Alvarado",
+      "email": "timothyalvarado@gmail.com",
+      "age": 53,
+      "avatar": "https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png"
+    },
+    {
+      "id": 24,
+      "name": "Pamela Gordon",
+      "email": "pamelagordon@gmail.com",
+      "age": 54,
+      "avatar": "https://cdn.icon-icons.com/icons2/2643/PNG/512/female_woman_user_people_person_avatar_black_tone_icon_159361.png"
+    },
+    {
+      "id": 25,
+      "name": "Chad Trevino",
+      "email": "chadtrevino@gmail.com",
+      "age": 58,
+      "avatar": "https://w7.pngwing.com/pngs/481/915/png-transparent-computer-icons-user-avatar-woman-avatar-computer-business-conversation-thumbnail.png"
+    },
+    {
+      "id": 26,
+      "name": "John Solis",
+      "email": "johndysolis@gmail.com",
+      "age": 21,
+      "avatar": "https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png"
+    },
+    {
+      "id": 27,
+      "name": "Mrs. Ruth Molina",
+      "email": "mrs.ruthmolina@gmail.com",
+      "age": 27,
+      "avatar": "https://w7.pngwing.com/pngs/129/292/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png"
+    },
+    {
+      "id": 28,
+      "name": "Joshua Anderson",
+      "email": "joshuaanderson@gmail.com",
+      "age": 59,
+      "avatar": "https://w7.pngwing.com/pngs/481/915/png-transparent-computer-icons-user-avatar-woman-avatar-computer-business-conversation-thumbnail.png"
+    },
+    {
+      "id": 29,
+      "name": "Sean Farmer",
+      "email": "seanfarmer@gmail.com",
+      "age": 43,
+      "avatar": "https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png"
+    },
+    {
+      "id": 30,
+      "name": "Michael Morris",
+      "email": "michaelmorris@gmail.com",
+      "age": 65,
+      "avatar": "https://w7.pngwing.com/pngs/481/915/png-transparent-computer-icons-user-avatar-woman-avatar-computer-business-conversation-thumbnail.png"
+    }
+  ]
+}
