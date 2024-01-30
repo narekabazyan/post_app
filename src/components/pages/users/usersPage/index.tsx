@@ -30,6 +30,11 @@ const UsersPage = () => {
     refetchOnMountOrArgChange: true,
   });
 
+
+  /**
+   * Client-side pagination is used due to API limitations; json-server doesn't provide total element count.
+   * Pagination is based on pageNumber and a fixed offset (UsersQueryOffset).
+   */
   const paginatedUsers: User[] = useMemo(() => {
     const startIndex: number = usersQueryFilter.pageNumber * UsersQueryOffset;
     const endIndex: number = startIndex + UsersQueryOffset;
@@ -44,6 +49,10 @@ const UsersPage = () => {
     });
   };
 
+  /**
+   * Debounced function to optimize API calls by triggering the update of query filters
+   * when the user stops typing. This helps prevent excessive API requests during user input.
+   */
   const debouncedSaveQueryFilter = debounce(setUsersQueryFilter, TypingDelay);
 
   return (

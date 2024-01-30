@@ -23,21 +23,31 @@ const UsersPageHead: FC<UsersPageHeadProps> = ({
 }) => {
   const [nameSearchValue, setNameSearchInputValue] = useState('');
 
+  /**
+   * Update the name sorting value while clearing the age sorting value to
+   * accommodate the limitation of json-server, which does not support multi-sorting.
+   * Reset the page number to its initial state.
+   */
   const handleChangeNameSort = (value: SortEnum) => {
     setUsersQueryFilter({
       ...usersQueryFilter,
       nameSort: value,
-      ageSort: SortEnum.NONE,
-      pageNumber: InitialPage,
+      ageSort: SortEnum.NONE, // Clear age sorting
+      pageNumber: InitialPage, // Reset page number
     });
   };
 
+  /**
+   * Update the age sorting value while clearing the name sorting value to
+   * accommodate the limitation of json-server, which does not support multi-sorting.
+   * Reset the page number to its initial state.
+   */
   const handleChangeAgeSort = (value: SortEnum) => {
     setUsersQueryFilter({
       ...usersQueryFilter,
       ageSort: value,
-      nameSort: SortEnum.NONE,
-      pageNumber: InitialPage,
+      nameSort: SortEnum.NONE, // Clear name sorting
+      pageNumber: InitialPage, // Reset page number
     });
   };
 

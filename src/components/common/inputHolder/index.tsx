@@ -9,7 +9,7 @@ import {
 interface InputHolderProps {
   children: ReactElement;
   isRequired?: boolean;
-  title?: number;
+  title?: string;
 }
 
 const InputHolder: FC<InputHolderProps> = ({

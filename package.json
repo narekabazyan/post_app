@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "prepare": "husky install",
     "json-server": "npx json-server public/data/db.json --port 8083 --watch",
     "type-check": "tsc",
     "ts-lint-push-hook": "tsc --noEmit --incremental",
